@@ -35,51 +35,51 @@ int main(){
     else{
       aux[7] += 3;
     }
-    for(int i = 0; i < 3; i++){
-      if(i == 0){
+    for(int j = 0; i < 3; i++){
+      if(j == 0){
 	aux[1] += 3;
       }
-      else if(i == 1){
+      else if(j == 1){
 	aux[0] += 1;
 	aux[1] += 1;
       }
       else{
 	aux[0] += 3;
       }
-      for(int i = 0; i < 3; i++){
-	if(i == 0){
+      for(int k = 0; i < 3; i++){
+	if(k == 0){
 	  aux[6] += 3;
 	}
-	else if(i == 1){
+	else if(k == 1){
 	  aux[6] += 1;
 	  aux[2] += 1;
 	}
 	else{
 	  aux[2] += 3;
 	}
-	for(int i = 0; i < 3; i++){
-	  if(i == 0){
+	for(int l = 0; i < 3; i++){
+	  if(l == 0){
 	    aux[4] += 3;
 	  }
-	  else if(i == 1){
+	  else if(l == 1){
 	    aux[4] += 1;
 	    aux[9] += 1;
 	  }
 	  else{
 	    aux[9] += 3;
 	  }
-	  for(int i = 0; i < 3; i++){
-	    if(i == 0){
+	  for(int m = 0; i < 3; i++){
+	    if(m == 0){
 	      aux[8] += 3;
 	    }
-	    else if(i == 1){
+	    else if(m == 1){
 	      aux[8] += 1;
 	      aux[3] += 1;
 	    }
 	    else{
 	      aux[3] += 3;
 	    }
-	    if(aux[5] > mayor){//aqui evaluo si Peru obtiene mejor puntaje que su anterior partido
+	    if(aux[5] == mayor){//aqui evaluo si Peru obtiene mejor puntaje que su anterior partido
 	      int loc,min;
 	      mayor = aux[5];
 	      /*uso el ordenamiento: selection sort; para mostrar la tabla con las posiciones respectivas*/
